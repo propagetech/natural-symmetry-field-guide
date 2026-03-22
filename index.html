@@ -1,55 +1,181 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Natural Symmetry Field Guide</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <title>Field Guide to Natural Symmetry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <h1>Natural Symmetry Field Guide</h1>
-        <nav>
-            <a href="#journal-cover">Journal Cover</a>
-            <a href="#specimen-index">Specimen Index</a>
-            <a href="#biradial">Biradial Specimens</a>
-            <a href="#triradial">Triradial Specimens</a>
-            <a href="#field-notes">Field Notes</a>
-        </nav>
-    </header>
+  <header>
+    <div class="header-top">DEPARTMENT OF NATURAL SCIENCES</div>
+    <h1>Field Guide to Natural Symmetry</h1>
+    <nav>
+      <a href="#journal-cover">Journal Cover</a>
+      <a href="#specimen-index">Specimen Index</a>
+      <a href="#biradial">Biradial</a>
+      <a href="#triradial">Triradial</a>
+      <a href="#field-notes">Field Notes</a>
+    </nav>
+  </header>
 
-    <main>
-        <section id="journal-cover">
-            <h2>Journal Cover (Intro)</h2>
-            <p>Intro copy about the project, what “natural symmetry” means, etc.</p>
-        </section>
+  <main>
+    <section id="journal-cover" class="hero">
+      <div class="hero-content">
+        <div class="dept-label">DEPARTMENT OF NATURAL SCIENCES</div>
+        <h2 class="hero-title">Field Guide to<br>Natural Symmetry</h2>
+        <div class="specimen-card">
+          <div class="specimen-image-placeholder">🌿</div>
+        </div>
+        <p class="property-label">Property of: ___________________</p>
+        <p class="grade-label">Grade 4 | Geometry Division</p>
+        <button class="cta-button">START EXPEDITION →</button>
+      </div>
+    </section>
 
-        <section id="specimen-index">
-            <h2>Specimen Index (Hub)</h2>
-            <!-- Cards / list of specimens go here -->
-        </section>
+    <section id="specimen-index">
+      <h2 class="section-title">📚 Table of Contents</h2>
+      <p class="section-subtitle">Select a specimen class below to continue your field observations. Completed classes will be marked with a verification stamp.</p>
+      
+      <div class="specimen-grid">
+        <div class="specimen-card">
+          <div class="specimen-badge">VERIFIED</div>
+          <div class="specimen-image">🦋</div>
+          <h3>Class I: Bilateral</h3>
+          <p class="specimen-subtitle">Actias luna & Quercus</p>
+          <a href="#" class="review-link">✓ Review Observations</a>
+        </div>
 
-        <section id="biradial">
-            <h2>Biradial Specimens (2 Lines)</h2>
-            <!-- Content from your Stitch screen -->
-        </section>
+        <div class="specimen-card">
+          <div class="specimen-badge">VERIFIED</div>
+          <div class="specimen-image">💗</div>
+          <h3>Class II: Biradial</h3>
+          <p class="specimen-subtitle">Arachis hypogaea & Lamprocapnos</p>
+          <a href="#biradial" class="review-link">✓ Review Observations</a>
+        </div>
 
-        <section id="triradial">
-            <h2>Triradial Specimens (3 Lines)</h2>
-            <!-- Content from your Stitch screen -->
-        </section>
+        <div class="specimen-card">
+          <div class="specimen-image">🌼</div>
+          <h3>Class III: Triradial</h3>
+          <p class="specimen-subtitle">Trillium & Trifolium</p>
+          <a href="#triradial" class="begin-link">○ Begin Expedition</a>
+        </div>
 
-        <section id="field-notes">
-            <h2>Field Notes Summary</h2>
-            <!-- Text blocks for notes, observations, etc. -->
-        </section>
-    </main>
+        <div class="specimen-card locked">
+          <div class="specimen-badge">🔒 LOCKED</div>
+          <div class="specimen-image">🪼</div>
+          <h3>Class IV: Tetraradial</h3>
+          <p class="specimen-subtitle">Cornus florida & Aurelia aurita</p>
+          <p class="complete-label">○ Complete Class III to Unlock</p>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-        <p>© 2026 Natural Symmetry Field Guide</p>
-    </footer>
+    <section id="biradial">
+      <div class="breadcrumb">← INDEX</div>
+      <h2 class="section-title">Class II: Biradial Symmetry</h2>
+      <p class="section-subtitle">Specimens exhibiting two distinct lines of symmetry, dividing the organism into four equal, mirroring quadrants.</p>
+      
+      <div class="specimen-detail-grid">
+        <div class="specimen-detail">
+          <div class="specimen-diagram">🥜</div>
+          <h4>Fig 3. Arachis hypogaea</h4>
+          <p class="specimen-label">Common Peanut (Cross-section)</p>
+          <button class="reveal-button">REVEAL AXIS</button>
+        </div>
+
+        <div class="specimen-detail">
+          <div class="specimen-diagram">💗</div>
+          <h4>Fig 4. Lamprocapnos spectabilis</h4>
+          <p class="specimen-label">Bleeding Heart Flower</p>
+          <button class="reveal-button">REVEAL AXIS</button>
+        </div>
+      </div>
+      <p class="expedition-date">Expedition Date: ___/___/___</p>
+    </section>
+
+    <section id="triradial">
+      <div class="breadcrumb">← BACK TO INDEX</div>
+      <h2 class="section-title">Class III: Triradial</h2>
+      
+      <div class="specimen-detail-grid">
+        <div class="specimen-detail">
+          <div class="specimen-diagram">🌼</div>
+          <h4>Fig 5. Trillium grandiflorum</h4>
+          <button class="reveal-button">REVEAL SYMMETRY© VERIFIED</button>
+        </div>
+
+        <div class="specimen-detail">
+          <div class="specimen-diagram">🍀</div>
+          <h4>Fig 6. Trifolium repens</h4>
+          <button class="reveal-button">REVEAL SYMMETRY© VERIFIED</button>
+        </div>
+      </div>
+      
+      <p class="observation-note"><strong>Observation Notes:</strong> Triradial symmetry exhibits three identical sectors originating from a central axis. Click to map the intersecting lines.</p>
+    </section>
+
+    <section id="field-notes">
+      <div class="breadcrumb">← RETURN TO INDEX</div>
+      <h2 class="section-title">Field Notes Summary</h2>
+      <p class="section-subtitle">You have documented 10 lines of symmetry across 8 biological specimens.</p>
+      
+      <div class="summary-grid">
+        <div class="summary-card">
+          <div class="summary-image">🦋</div>
+          <p class="summary-class">CLASS I</p>
+          <p class="summary-name">Actias luna</p>
+        </div>
+        
+        <div class="summary-card">
+          <div class="summary-image">🍂</div>
+          <p class="summary-class">CLASS I</p>
+          <p class="summary-name">Quercus alba</p>
+        </div>
+        
+        <div class="summary-card">
+          <div class="summary-image">🥜</div>
+          <p class="summary-class">CLASS II</p>
+          <p class="summary-name">Arachis hypogaea</p>
+        </div>
+        
+        <div class="summary-card">
+          <div class="summary-image">💗</div>
+          <p class="summary-class">CLASS II</p>
+          <p class="summary-name">Lamprocapnos</p>
+        </div>
+        
+        <div class="summary-card">
+          <div class="summary-image">🌼</div>
+          <p class="summary-class">CLASS III</p>
+          <p class="summary-name">Trillium grandiflorum</p>
+        </div>
+        
+        <div class="summary-card">
+          <div class="summary-image">🍀</div>
+          <p class="summary-class">CLASS III</p>
+          <p class="summary-name">Trifolium repens</p>
+        </div>
+        
+        <div class="summary-card">
+          <div class="summary-image">🌸</div>
+          <p class="summary-class">CLASS IV</p>
+          <p class="summary-name">Cornus florida</p>
+        </div>
+        
+        <div class="summary-card">
+          <div class="summary-image">🪼</div>
+          <p class="summary-class">CLASS IV</p>
+          <p class="summary-name">Aurelia aurita</p>
+        </div>
+      </div>
+      
+      <button class="submit-button">CLOSE JOURNAL & SUBMIT 📤</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Natural Symmetry Field Guide | Department of Natural Sciences</p>
+  </footer>
 </body>
-
 </html>
