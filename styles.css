@@ -72,4 +72,240 @@
     font-size: 0.85rem;
     color: #6b7280;
   }
+
+  .header-top {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #6b7280;
+    width: 100%;
+  }
+
+  /* Symmetry worksheet (symmetry-worksheet.html) */
+  .worksheet-page .print-hint {
+    border: 1px solid #d1d5db;
+    background: #f3f4f6;
+    border-radius: 999px;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: #111827;
+  }
+
+  .worksheet-page .print-hint:hover {
+    background: #e5e7eb;
+  }
+
+  .worksheet-main {
+    max-width: 900px;
+  }
+
+  .worksheet-banner {
+    margin-bottom: 1rem;
+  }
+
+  .worksheet-dept {
+    margin: 0 0 0.25rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #6b7280;
+  }
+
+  .worksheet-title {
+    margin: 0 0 0.75rem;
+    font-size: 1.35rem;
+    line-height: 1.25;
+  }
+
+  .worksheet-instructions {
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+    color: #374151;
+  }
+
+  .worksheet-meta {
+    display: grid;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .worksheet-meta p {
+    margin: 0;
+  }
+
+  .meta-label {
+    display: inline-block;
+    min-width: 4.5rem;
+    font-weight: 600;
+    color: #4b5563;
+  }
+
+  .worksheet-section-title {
+    margin: 0 0 0.75rem;
+    font-size: 1rem;
+    color: #1f2937;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.35rem;
+  }
+
+  .worksheet-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  @media (max-width: 640px) {
+    .worksheet-pair {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .paste-panel {
+    margin: 0;
+  }
+
+  .paste-area {
+    min-height: 140px;
+    border: 2px dashed #9ca3af;
+    border-radius: 0.5rem;
+    background: #fafafa;
+  }
+
+  .photo-panel {
+    margin: 0;
+  }
+
+  .photo-frame {
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    background: #f3f4f6;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.35rem;
+    overflow: hidden;
+  }
+
+  .photo-frame--light {
+    background: #e5e7eb;
+  }
+
+  .photo-frame img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+  }
+
+  .photo-label {
+    margin: 0.45rem 0 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #374151;
+  }
+
+  .paste-caption {
+    margin: 0.5rem 0 0;
+    font-size: 0.8rem;
+    color: #4b5563;
+  }
+
+  .worksheet-answer-line {
+    padding: 0.45rem 0.5rem;
+    border-radius: 0.35rem;
+    border-left: 3px solid #22c55e;
+    background: #f0fdf4;
+    color: #14532d;
+    line-height: 1.45;
+  }
+
+  .worksheet-answer-line strong {
+    color: #166534;
+  }
+
+  .worksheet-reminder {
+    margin: 1.25rem 0 0;
+    font-size: 0.85rem;
+    color: #6b7280;
+    font-style: italic;
+  }
+
+  .worksheet-credits {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .worksheet-credits-title {
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #4b5563;
+  }
+
+  .worksheet-credits-list {
+    margin: 0;
+    padding-left: 1.25rem;
+    font-size: 0.75rem;
+    color: #6b7280;
+    line-height: 1.5;
+  }
+
+  .worksheet-credits-list a {
+    color: #2563eb;
+  }
+
+  @media print {
+    .worksheet-page .print-hint {
+      display: none;
+    }
+
+    .worksheet-page header {
+      position: static;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .worksheet-page section {
+      box-shadow: none;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .worksheet-page .paste-area {
+      min-height: 160px;
+      background: white;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .worksheet-page .photo-frame {
+      background: white;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .worksheet-page .photo-frame img {
+      max-height: 200px;
+    }
+
+    .worksheet-credits-list a {
+      color: #111827;
+      text-decoration: underline;
+    }
+
+    .worksheet-answer-line {
+      background: #ecfdf5;
+      border-left-color: #16a34a;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    @page {
+      margin: 0.5in;
+    }
+  }
   
